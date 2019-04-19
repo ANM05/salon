@@ -12,6 +12,15 @@ public class Client{
         this.mobile = mobile;
         this.email = email;
         stringid = stringId;
+    }
 
+    public String getName(){
+        return name;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public String getMobile(){
+        return mobile;
     }
 }

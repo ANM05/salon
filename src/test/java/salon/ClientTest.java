@@ -20,5 +20,19 @@ public class ClientTest{
     Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
     assertEquals(true, testClient instanceof Client);
     }
-
+    @Test
+    public void Client_instantiatesWithClientName_String(){
+        Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        assertEquals("Anne O.", testClient.getName());
+    }
+    @Test
+    public void Client_instantiatesWithEmail_String(){
+        Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        assertEquals("anne0@gmail.com", testClient.getEmail());
+    }
+    @Test
+    public void Client_instantiatesWithClientMobile_String(){
+        Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        assertEquals("0745-456-673", testClient.getMobile());
+    }
 }
