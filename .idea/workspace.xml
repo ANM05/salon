@@ -226,7 +226,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="824" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25289574" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -244,7 +243,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.7702703" weight="0.95683455" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7702703" visible="true" weight="0.95683455" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.22972973" side_tool="true" weight="0.95683455" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.4993565" weight="0.3294964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />

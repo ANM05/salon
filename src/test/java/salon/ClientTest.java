@@ -1,6 +1,6 @@
 package salon;
 import org.junit.*;
-import org.junit.Assert.*;
+import static org.junit.Assert.*;
 import org.sql2o.*;
 
 public class ClientTest{
@@ -14,6 +14,11 @@ public class ClientTest{
             String sql = "DELETE FROM clients *;";
             con.createQuery(sql).executeUpdate();
         }
+    }
+    @Test
+    public void Client_instantiatesCorrectly_true(){
+    Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+    assertEquals(true, testClient instanceof Client);
     }
 
 }
