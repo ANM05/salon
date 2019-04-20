@@ -43,7 +43,8 @@ public class Client{
         }
         else{
             Client newClient = (Client) testClient;
-            return this.clientsAll().equals(newClient.clientsAll());
+            return this.getName().equals(newClient.getName()) &&
+                    this.getId() == newClient.getId();
         }
     }
     public void save(){
@@ -56,6 +57,15 @@ public class Client{
                     .addParameter("stylist_id", this.stylist_id)
                     .executeUpdate()
                     .getKey();
+        }
+    }
+    public static Client find(int id){
+        try(Connection connect= DB.sql2o.open()){
+            String sql ="SELECT * FROM clients WHERE id=:id;";
+            Client client = connect.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(Client.class);
+                    return client;
         }
     }
 }
