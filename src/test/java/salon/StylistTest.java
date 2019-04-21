@@ -11,8 +11,10 @@ public class StylistTest{
     @After
     public void tearDown() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "DELETE FROM stylists *;";
-            con.createQuery(sql).executeUpdate();
+            String deleteStylistsQuery = "DELETE FROM stylists *;";
+            String deleteClientsQuery = "DELETE FROM clients *;";
+            con.createQuery(deleteStylistsQuery).executeUpdate();
+            con.createQuery(deleteClientsQuery).executeUpdate();
         }
     }
     @Test
@@ -34,5 +36,20 @@ public class StylistTest{
     public void getEmail_instantiatesCorrectlyWithTheStylistEmail_String(){
         Stylist testStylist = new Stylist("John Doe","0743-987425", "doe@gmail.com");
         assertEquals("doe@gmail.com", testStylist.getEmail());
+    }
+    @Test
+    public void getId_instantiatesWithProperStylistIdFromDbase_int(){
+        Stylist testStylist = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        testStylist.save();
+        assertTrue(testStylist.getId()>0);
+    }
+    @Test
+    public void allStylists_returnsAllStylistsObjectsFromDbase_true(){
+        Stylist stylistOne = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        stylistOne.save();
+        Stylist stylistTwo = new Stylist("Loice", "0723-654789", "loice@gmail.com");
+        stylistTwo.save();
+        assertEquals(true, Stylist.allStylists().get(0).equals(stylistOne));
+        assertEquals(true, Stylist.allStylists().get(1).equals(stylistTwo));
     }
 }
