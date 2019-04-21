@@ -6,14 +6,21 @@ public class Stylist{
     private String name;
     private String mobile;
     private String email;
-    private LocalDateTime date;
     private int id;
 
     public Stylist(String name, String mobile, String email){
        this.name = name;
        this.mobile = mobile;
        this.email = email;
-       date = LocalDateTime.now();
-    }
 
+    }
+    public String getName(){
+        return name;
+    }
+    public String getMobile(){
+        return mobile;
+    }
+    public String getEmail(){
+        return email;
+    }
 }
