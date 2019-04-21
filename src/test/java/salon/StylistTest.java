@@ -52,4 +52,31 @@ public class StylistTest{
         assertEquals(true, Stylist.allStylists().get(0).equals(stylistOne));
         assertEquals(true, Stylist.allStylists().get(1).equals(stylistTwo));
     }
+    @Test
+    public void equals_returnsTrueIfStylistObjectsAreSame(){
+        Stylist stylistOne = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        Stylist stylistTwo = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        assertTrue(stylistOne.equals(stylistTwo));
+    }
+    @Test
+    public void save_savesIntoDataBase_true(){
+        Stylist testStylist = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        testStylist.save();
+        assertTrue(Stylist.allStylists().get(0).equals(testStylist));
+    }
+    @Test
+    public void save_assignsIdsToItemsSavedIntoDataBase(){
+        Stylist testStylist = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        testStylist.save();
+        Stylist savedStylist = Stylist.allStylists().get(0);
+        assertEquals(testStylist.getId(), savedStylist.getId());
+    }
+    @Test
+    public void find_returnsObjectWithSameId_stylistTwo(){
+        Stylist stylistOne = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        stylistOne.save();
+        Stylist stylistTwo = new Stylist("Loice", "0723-654789", "loice@gmail.com");
+        stylistTwo.save();
+        assertEquals(Stylist.find(stylistTwo.getId()), stylistTwo);
+    }
 }

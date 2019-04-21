@@ -55,7 +55,7 @@ public class ClientTest{
     @Test
     public  void equals_returnsTrueIfClientObjectsAreSame(){
         Client firstClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
-        Client secondClient = new Client("Yvone", "0732-786-932", "yvone@gmail.com", 2);
+        Client secondClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
         assertTrue(firstClient.equals(secondClient));
     }
     @Test
@@ -78,5 +78,14 @@ public class ClientTest{
         Client secondClient = new Client("Yvone", "0732-786-932", "yvone@gmail.com", 2);
         secondClient.save();
         assertEquals(Client.find(firstClient.getId()), firstClient);
+    }
+    @Test
+    public void save_saveStylistIdIntoDB_true(){
+        Stylist testStylist = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        testStylist.save();
+        Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        testClient.save();
+        Client savedClient = Client.find(testClient.getId());
+        assertEquals(savedClient.getStylistId(), testStylist.getId());
     }
 }

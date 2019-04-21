@@ -34,7 +34,35 @@ public class Stylist{
             return connect.createQuery(sql).executeAndFetch(Stylist.class);
         }
     }
+    @Override
+    public boolean equals(Object testStylist){
+        if(!(testStylist instanceof Stylist)){
+            return false;
+        }
+        else{
+            Stylist newStylist = (Stylist) testStylist;
+            return this.getName().equals(newStylist.getName()) &&
+            this.getId() == newStylist.getId();
+        }
+    }
     public void save(){
-
+        try(Connection connect = DB.sql2o.open()){
+            String sql= "INSERT INTO stylists (name, mobile, email) VALUES (:name, :mobile, :email);";
+            this.id = (int) connect.createQuery(sql, true)
+                    .addParameter("name", this.name)
+                    .addParameter("mobile", this.mobile)
+                    .addParameter("email", this.email)
+                    .executeUpdate()
+                    .getKey();
+        }
+    }
+    public static Stylist find(int id){
+        try(Connection connect = DB.sql2o.open()){
+            String sql = "SELECT * FROM stylists WHERE id=:id;";
+            Stylist stylist = connect.createQuery(sql)
+            .addParameter("id", id)
+                    .executeAndFetchFirst(Stylist.class);
+            return stylist;
+        }
     }
 }
