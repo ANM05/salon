@@ -22,6 +22,20 @@ public class App {
             model.put("template", "templates/index.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-
+        get("/stylists/new", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "templates/stylist-form.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        post("/stylists", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("name");
+            String mobile= request.queryParams("mobile");
+            String email = request.queryParams("email");
+            Stylist newStylist = new Stylist(name, mobile, email);
+            newStylist.save();
+            model.put("template", "templates/");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
 }
