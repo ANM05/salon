@@ -14,7 +14,7 @@ public class Client{
         this.name = name;
         this.mobile = mobile;
         this.email = email;
-        this.stylist_id = stylistId;
+        stylist_id = stylistId;
     }
 
     public String getName(){
@@ -28,6 +28,9 @@ public class Client{
     }
     public int getId(){
         return id;
+    }
+    public int getStylistId(){
+        return stylist_id;
     }
 
     public static List<Client> clientsAll(){
@@ -44,7 +47,8 @@ public class Client{
         else{
             Client newClient = (Client) testClient;
             return this.getName().equals(newClient.getName()) &&
-                    this.getId() == newClient.getId();
+                    this.getId() == newClient.getId() &&
+                    this.getStylistId() == newClient.getStylistId();
         }
     }
     public void save(){

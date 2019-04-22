@@ -2,6 +2,7 @@ package salon;
 import org.junit.*;
 import static org.junit.Assert.*;
 import org.sql2o.*;
+import java.util.Arrays;
 
 public class StylistTest{
     @Before
@@ -78,5 +79,16 @@ public class StylistTest{
         Stylist stylistTwo = new Stylist("Loice", "0723-654789", "loice@gmail.com");
         stylistTwo.save();
         assertEquals(Stylist.find(stylistTwo.getId()), stylistTwo);
+    }
+    @Test
+    public void getClients_returnsAllClientsWithSameStylistId_clientList(){
+        Stylist testStylist = new Stylist("John Doe","0743-987425", "doe@gmail.com");
+        testStylist.save();
+        Client firstClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        firstClient.save();
+        Client secondClient = new Client("Yvone", "0732-786-932", "yvone@gmail.com", 2);
+        secondClient.save();
+        Client[] clients = new Client[] {firstClient, secondClient};
+        assertTrue(testStylist.getClients().containsAll(Arrays.asList(clients)));
     }
 }
