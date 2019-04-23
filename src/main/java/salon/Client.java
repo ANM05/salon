@@ -56,7 +56,7 @@ public class Client{
             String sql = "INSERT INTO clients (name, mobile, email, stylist_id) VALUES (:name, :mobile, :email, :stylist_id);";
             this.id = (int) connect.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .addParameter("mobile", this.email)
+                    .addParameter("mobile", this.mobile)
                     .addParameter("email", this.email)
                     .addParameter("stylist_id", this.stylist_id)
                     .executeUpdate()

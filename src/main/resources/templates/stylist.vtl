@@ -1,8 +1,9 @@
 <div>
 <h1>List of stylists</h1>
-    <ul>
+    <div class="list-group">
         #foreach ($stylist in $stylists)
-        <li>$stylist.getName()</li>
+        <a href="/stylist/$stylist.getId()" class="list-group-item list-group-item-action list-group-item-light">$stylist.getName()</a>
         #end
-    </ul>
+    </div>
+    <a href="/stylists/new"><button class="btn-lg">Add new Stylist</button></a>
 </div>

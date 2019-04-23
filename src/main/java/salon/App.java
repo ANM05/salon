@@ -43,5 +43,37 @@ public class App {
             model.put("template", "templates/stylist.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
+        get("/stylist/:id", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            Stylist stylist= Stylist.find(Integer.parseInt(request.params(":id")));
+            model.put("stylist", stylist);
+            model.put("template", "templates/stylist-detail.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        get("/clients/new", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            List<Stylist> stylists = Stylist.allStylists();
+            model.put("stylists", stylists);
+            model.put("template", "templates/client-form.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        post("/client", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            Stylist stylist = Stylist.find(Integer.parseInt(request.queryParams("stylist_id")));
+            String name = request.queryParams("name");
+            String mobile= request.queryParams("mobile");
+            String email = request.queryParams("email");
+            Client newClient = new Client(name, mobile, email, stylist.getId());
+            newClient.save();
+            model.put("stylist", stylist);
+            model.put("template", "templates/client-success.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        get("/client", (request, response) ->{
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("clients", Client.clientsAll());
+            model.put("template", "templates/clients.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
     }
 }
