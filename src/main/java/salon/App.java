@@ -34,7 +34,7 @@ public class App {
             String email = request.queryParams("email");
             Stylist newStylist = new Stylist(name, mobile, email);
             newStylist.save();
-            model.put("template", "templates/");
+            model.put("template", "templates/stylist-success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
         get("/stylists", (request, response) ->{

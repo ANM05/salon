@@ -47,7 +47,7 @@ public class Stylist{
     }
     public void save(){
         try(Connection connect = DB.sql2o.open()){
-            String sql= "INSERT INTO stylists (name, mobile, email) VALUES (:name, :mobile, :email);";
+            String sql= "INSERT INTO stylists (name, mobile, email) VALUES (:name, :mobile, :email)";
             this.id = (int) connect.createQuery(sql, true)
                     .addParameter("name", this.name)
                     .addParameter("mobile", this.mobile)
