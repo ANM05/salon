@@ -1,4 +1,7 @@
-<div>
-<p>$clients.getName()</p>
-    <p>$clients.getMobile()</p>
+<div class="list-group">
+    #foreach ($client in $clients)
+    <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getName()</a>
+    <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getMobile()</a>
+    <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getEmail()</a>
+    #end
 </div>
