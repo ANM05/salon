@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04be9eaf-1c2f-499d-9265-eb33c8b92c41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/salon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/salon/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/salon/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/salon/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/clients.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/clients.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/salon/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/salon/ClientTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -44,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/salon/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+            <state relative-caret-position="415">
+              <caret line="76" column="92" selection-start-line="76" selection-start-column="92" selection-end-line="76" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#659#660#0" expanded="true" />
@@ -61,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/salon/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="85" column="81" lean-forward="true" selection-start-line="85" selection-start-column="81" selection-end-line="85" selection-end-column="81" />
+            <state relative-caret-position="393">
+              <caret line="92" column="38" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="390">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -119,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/salon/ClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="505">
-              <caret line="94" column="70" selection-start-line="94" selection-start-column="70" selection-end-line="94" selection-end-column="70" />
+              <caret line="94" column="69" lean-forward="true" selection-start-line="94" selection-start-column="69" selection-end-line="94" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,12 +167,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/client-success.vtl" />
-        <option value="$PROJECT_DIR$/src/main/java/salon/Client.java" />
-        <option value="$PROJECT_DIR$/src/test/java/salon/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/images/app.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl" />
+        <option value="$PROJECT_DIR$/src/test/java/salon/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/salon/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/clients.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/salon/Client.java" />
       </list>
     </option>
   </component>
@@ -454,20 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="82" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="103" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-success.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -475,25 +462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/salon/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/salon/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="94" column="70" selection-start-line="94" selection-start-column="70" selection-end-line="94" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -511,17 +483,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="8" column="82" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/salon/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="85" column="81" lean-forward="true" selection-start-line="85" selection-start-column="81" selection-end-line="85" selection-end-column="81" />
+        <state relative-caret-position="60">
+          <caret line="4" column="103" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/salon/ClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="94" column="69" lean-forward="true" selection-start-line="94" selection-start-column="69" selection-end-line="94" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -530,8 +509,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/clients.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="390">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/salon/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="92" column="38" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/salon/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="76" column="92" selection-start-line="76" selection-start-column="92" selection-end-line="76" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
