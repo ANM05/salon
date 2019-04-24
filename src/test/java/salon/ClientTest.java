@@ -95,4 +95,12 @@ public class ClientTest{
         testClient.update("Jane", "0745-456-673", "anne0@gmail.com");
         assertEquals("Jane", Client.find(testClient.getId()).getName());
     }
+    @Test
+    public void delete_deletesClientsFromDbase_true(){
+        Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        testClient.save();
+        int testClientId = testClient.getId();
+        testClient.delete();
+        assertEquals(null, Client.find(testClientId));
+    }
 }
