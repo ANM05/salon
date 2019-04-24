@@ -1,4 +1,6 @@
 <div>
+    <div class="row">
+        <div class="col-4">
     <h4>View Stylist details</h4>
     <p>Name: $stylist.getName()</p>
     <p>Mobile: $stylist.getMobile()</p>
@@ -6,4 +8,14 @@
 
     <a href="/stylists/new"><button class="btn-lg">Add new Stylist</button></a>
     <a href="/clients/new"><button class="btn-lg">Add new Client</button></a>
+        </div>
+        <div class="col-8">
+            <h5>Clients List</h5>
+            <ul class="list-group">
+                #foreach ($client in $stylist.getClients())
+                <li class="list-group-item list-group-item-action list-group-item-light">$client.getName()</li>
+                #end
+            </ul>
+        </div>
+    </div>
 </div>

@@ -72,4 +72,16 @@ public class Client{
                     return client;
         }
     }
+    public void update(String name, String mobile, String email, int stylist_id){
+        try(Connection connect = DB.sql2o.open()){
+            String sql ="UPDATE clients SET name, mobile, email, stylist_id = :name, :mobile, :email, :stylist_id WHERE id = :id;";
+            connect.createQuery(sql)
+            .addParameter("name", name)
+                    .addParameter("mobile", mobile)
+                    .addParameter("email", email)
+                    .addParameter("stylist_id", stylist_id)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        }
+    }
 }

@@ -2,14 +2,15 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .1rem;
-  background: rgba(0, 0, 0, 0.3)!important;
+  background: rgba(0, 0, 0, 0.2)!important;
 }
 .nav-brand img{
-  height: 4rem;
+  height: 3rem;
 }
 
 .header{
     text-align: center;
+    color: #75736C;
 }
 
 body{

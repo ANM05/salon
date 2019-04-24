@@ -88,4 +88,11 @@ public class ClientTest{
         Client savedClient = Client.find(testClient.getId());
         assertEquals(savedClient.getStylistId(), testStylist.getId());
     }
+    @Test
+    public void update_updatesClientName_true(){
+        Client testClient = new Client("Anne O.", "0745-456-673", "anne0@gmail.com", 1);
+        testClient.save();
+        testClient.update("Jane", "0745-456-673", "anne0@gmail.com", 1);
+        assertEquals("Jane", Client.find(testClient.getId()).getName());
+    }
 }
