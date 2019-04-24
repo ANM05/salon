@@ -23,3 +23,8 @@ border-top: 1px solid #ddd;
 border-radius: 0;
 color: black;
 }
+.divide{
+  width: 100%;
+  margin-top: 1rem;
+  border-top: .2rem solid #D27B34;
+}
