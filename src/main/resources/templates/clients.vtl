@@ -1,16 +1,33 @@
 <div>
     <div class="row">
         <div class="col-4">
+            <h4>Update Client Details</h4>
+            <form class="form-group" action="/client" method="post">
+                <select name="stylist_id">
 
+                    <option value="$stylist.getId()">
+                        $stylist.getName()
+                    </option>
+
+                </select><br/>
+                <label for="name">Client Name</label>
+                <input type="text" name="name" id="name" class="form-control"/>
+                <label for="mobile">Mobile</label>
+                <input type="text" name="mobile" id="mobile" class="form-control"/>
+                <label for="email">E-Mail</label>
+                <input type="text" name="email" id="email" class="form-control"/>
+                <button type="submit" class="btn-lg">Update Details</button>
+            </form>
         </div>
         <div class="col-8">
+            <h4>Client Details</h4>
 <div class="list-group">
-    #foreach ($client in $clients)
+    <h4>Stylist Name: $stylist.getName()</h4>
     <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getName()</a>
     <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getMobile()</a>
     <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getEmail()</a>
     <hr class="divide"/>
-    #end
+
 </div>
 </div>
 </div>
