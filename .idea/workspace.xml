@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="04be9eaf-1c2f-499d-9265-eb33c8b92c41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/salon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/salon/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/salon/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/salon/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/images/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/images/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.vtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/stylist-success.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/stylist-success.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/salon/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/salon/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -49,22 +45,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/salon/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -81,17 +65,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/images/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="570">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-form.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="18" selection-start-line="1" selection-start-column="4" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="285">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -126,11 +110,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist-success.vtl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+              <caret line="2" selection-start-line="2" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-success.vtl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -138,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="103" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="112" />
+            <state relative-caret-position="90">
+              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -160,7 +153,6 @@
         <option value="$PROJECT_DIR$/src/main/java/salon/Stylist.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/stylist-form.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/client-form.vtl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/client-success.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/clients.vtl" />
@@ -168,9 +160,10 @@
         <option value="$PROJECT_DIR$/src/main/java/salon/Client.java" />
         <option value="$PROJECT_DIR$/src/main/java/salon/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/stylist-success.vtl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/stylist.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/public/images/app.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout.vtl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/stylist-success.vtl" />
       </list>
     </option>
   </component>
@@ -186,7 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,7 +261,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,7 +302,7 @@
     <frame x="0" y="25" width="1600" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24839126" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25160876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -445,17 +438,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-success.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist-detail.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/salon/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -466,13 +462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-form.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="1" selection-start-column="4" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/salon/ClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1515">
@@ -480,37 +469,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="103" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/salon/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/images/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -531,7 +489,42 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist-success.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-success.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/images/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-form.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
     </entry>
