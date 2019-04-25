@@ -19,6 +19,9 @@
     <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getName()</a>
     <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getMobile()</a>
     <a href="" class="list-group-item list-group-item-action list-group-item-light">$client.getEmail()</a>
+    <form action="/stylist/$client.getStylistId()/client/$client.getId()/delete" method="post">
+        <button class="btn"><i class="fa fa-trash"></i></button>
+    </form>
     <hr class="divide"/>
 
 </div>

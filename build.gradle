@@ -36,3 +36,7 @@ dependencies {
 
 // Define the main class for the application
 mainClassName = 'salon.App'
+applicationName = "salon"
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installDist'])
