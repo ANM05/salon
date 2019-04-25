@@ -13,10 +13,10 @@ public class DB {
     static {
 
         try {
-            if (System.getenv("postgres://zapwsqjwnjotdb:92aa44f21eec47b91d4e12cbf41edc375306c9bf47583e7f23774eb769064631@ec2-174-129-208-118.compute-1.amazonaws.com:5432/d3l1m2dgler24r") == null) {
-                dbUri = new URI("postgres://localhost:5432/hsalon");
+            if (System.getenv("DATABASE_URL") == null) {
+                dbUri = new URI("postgres://localhost:5432/hair_salon");
             } else {
-                dbUri = new URI(System.getenv("postgres://zapwsqjwnjotdb:92aa44f21eec47b91d4e12cbf41edc375306c9bf47583e7f23774eb769064631@ec2-174-129-208-118.compute-1.amazonaws.com:5432/d3l1m2dgler24r"));
+                dbUri = new URI(System.getenv("DATABASE_URL"));
             }
             int port = dbUri.getPort();
             String host = dbUri.getHost();
