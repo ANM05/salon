@@ -1,7 +1,9 @@
 <div>
     <div class="row">
         <div class="col-4">
-            <h4>Update Client Details</h4>
+            <div class="card clientCard">
+            <h4 class="card-header info-color white-text text-center py-4">Update Client Details</h4>
+                <div class="card-body px-lg-5 pt-0">
             <form class="form-group" action="/stylist/$client.getStylistId()/client/$client.getId()" method="post">
                 <label for="name">Client Name</label>
                 <input type="text" name="name" id="name" class="form-control"/>
@@ -9,8 +11,10 @@
                 <input type="text" name="mobile" id="mobile" class="form-control"/>
                 <label for="email">E-Mail</label>
                 <input type="text" name="email" id="email" class="form-control"/>
-                <button type="submit" class="btn-lg">Update Details</button>
+                <button type="submit" class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect">Update Details</button>
             </form>
+                </div>
+            </div>
         </div>
         <div class="col-8">
             <h4>Client Details</h4>
