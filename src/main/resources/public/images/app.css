@@ -38,3 +38,8 @@ color: black;
 button:hover{
   background-color: #D30C47;
 }
+.card{
+width: 800px;
+margin: 0 auto;
+opacity: 0.9;
+}

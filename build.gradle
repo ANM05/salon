@@ -27,10 +27,7 @@ dependencies {
     compile 'org.slf4j:slf4j-simple:1.7.21' //to ensure easy to read logging.
     compile group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
     compile group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
-    // This dependency is found on compile classpath of this component and consumers.
     implementation 'com.google.guava:guava:27.0.1-jre'
-
-    // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
 

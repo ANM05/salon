@@ -1,7 +1,9 @@
-<div>
-    <h4>Add a new Client</h4>
-    <form class="form-group" action="/client" method="post">
-        <select name="stylist_id">
+<div class="card">
+    <h4 class="card-header info-color white-text text-center py-4"><strong>Add a new Client</strong></h4>
+    <br/>
+    <div class="card-body px-lg-5 pt-0">
+    <form class="text-center" action="/client" method="post">
+        <select class="form-control" name="stylist_id">
             #foreach ($stylist in $stylists)
             <option value="$stylist.getId()">
              $stylist.getName()
@@ -14,7 +16,8 @@
         <input type="text" name="mobile" id="mobile" class="form-control"/>
         <label for="email">E-Mail</label>
         <input type="text" name="email" id="email" class="form-control"/>
-        <button type="submit" class="btn-lg">Submit</button>
+        <button type="submit" class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect">Submit</button>
     </form>
-    <a href="/"><button class="btn-lg">Home</button></a>
+
+    </div>
 </div>
